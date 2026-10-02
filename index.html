@@ -1,14 +1,9 @@
-Entendido, no te preocupes. He ajustado el código para que use **exactamente** los mismos nombres de archivos tal como los tienes subidos en tu GitHub, codificando correctamente los espacios para que los navegadores web puedan cargarlos sin problemas.
-
-Solo entra a tu archivo **`index.html`** en GitHub, presiona el **lápiz ✏️**, borra todo y pega este código:
-
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para mi amado Luis ❤️</title>
+    <title>Para mi amado Luis ❤️️</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -95,34 +90,28 @@ Solo entra a tu archivo **`index.html`** en GitHub, presiona el **lápiz ✏️*
             font-weight: 600;
         }
 
-        /* Reproductor de Música de YouTube */
-        .music-box {
-            background: rgba(0, 0, 0, 0.6);
+        /* Reproductor de Audio */
+        .audio-box {
+            background: rgba(0, 0, 0, 0.5);
             padding: 20px;
             border-radius: 20px;
             margin: 20px 0;
-            border: 2px solid #ff6b8b;
+            border: 1px solid rgba(255, 107, 139, 0.4);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
         }
 
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            border-radius: 15px;
-            margin-top: 10px;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
+        audio {
             width: 100%;
-            height: 100%;
-            border: 0;
+            max-width: 400px;
+            height: 45px;
+            border-radius: 20px;
+            outline: none;
         }
 
-        /* Galería con tus 6 capturas */
+        /* Galería con tus 6 imágenes exactas */
         .photo-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -155,7 +144,7 @@ Solo entra a tu archivo **`index.html`** en GitHub, presiona el **lápiz ✏️*
             color: #ffb6c1;
         }
 
-        /* Carta de Amor Extensa */
+        /* Carta de Amor */
         .letter-box {
             background: rgba(0, 0, 0, 0.3);
             padding: 25px;
@@ -237,7 +226,7 @@ Solo entra a tu archivo **`index.html`** en GitHub, presiona el **lápiz ✏️*
 </head>
 <body>
 
-    <!-- Lluvia de Flores y Corazones -->
+    <!-- Lluvia constante de flores y corazones -->
     <script>
         function createParticle() {
             const symbols = ['🌸', '🌺', '🌹', '❤️', '💖', '✨', '💕', '🌷'];
@@ -264,38 +253,41 @@ Solo entra a tu archivo **`index.html`** en GitHub, presiona el **lápiz ✏️*
             ⚔️ Un lazo tan fuerte e inseparable como Shin'ichi Izumi y Migi 🧠
         </div>
 
-        <!-- Reproductor de Música John Legend - All of Me -->
-        <div class="music-box">
-            <p style="color: #ffb6c1; margin-bottom: 10px; font-weight: 600;">🎵 John Legend - All of Me 🎵</p>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/450p7goxZqg" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
+        <!-- Reproductor de Audio Solamente -->
+        <div class="audio-box">
+            <p style="color: #ffb6c1; font-weight: 600;">🎵 John Legend - All of Me 🎵</p>
+            <audio controls autoplay loop>
+                <source src="https://raw.githubusercontent.com/Anars/blank-audio/master/500-milliseconds-of-silence.mp3" type="audio/mpeg">
+                <source src="https://ia800301.us.archive.org/15/items/JohnLegendAllOfMe_201404/John%20Legend%20-%20All%20of%20Me.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <span style="font-size: 0.8rem; color: #aaaaaa;">(Presiona Play ▶️ para escuchar nuestra canción)</span>
         </div>
 
-        <!-- Galería usando las imágenes con sus nombres exactos -->
+        <!-- Galería de Fotos usando los nombres exactos de tu imagen -->
         <div class="photo-grid">
             <div class="photo-card">
-                <img src="./Captura%20de%20pantalla%202026-09-13%20193412.png" alt="Captura 1">
+                <img src="Captura de pantalla 2026-09-13 193412.png" alt="Captura 1">
                 <p>Nuestras aventuras juntos en Roblox 🎮❤️</p>
             </div>
             <div class="photo-card">
-                <img src="./Captura%20de%20pantalla%202026-09-24%20233349.png" alt="Captura 2">
+                <img src="Captura de pantalla 2026-09-24 233349.png" alt="Captura 2">
                 <p>Mis momentos más felices son a tu lado ✨</p>
             </div>
             <div class="photo-card">
-                <img src="./Captura%20de%20pantalla%202026-09-26%20233146.png" alt="Captura 3">
+                <img src="Captura de pantalla 2026-09-26 233146.png" alt="Captura 3">
                 <p>Eres mi campeón, mi peleador y mi protector 🥊💖</p>
             </div>
             <div class="photo-card">
-                <img src="./Captura%20de%20pantalla%202026-09-29%20202936.png" alt="Captura 4">
+                <img src="Captura de pantalla 2026-09-29 202936.png" alt="Captura 4">
                 <p>Risas, juegos y un amor sin límites 💕</p>
             </div>
             <div class="photo-card">
-                <img src="./Captura%20de%20pantalla%202026-09-29%20203052.png" alt="Captura 5">
+                <img src="Captura de pantalla 2026-09-29 203052.png" alt="Captura 5">
                 <p>Siempre estaré para sostenerte y abrazarte 🌸</p>
             </div>
             <div class="photo-card">
-                <img src="./Captura%20de%20pantalla%202026-09-29%20203208.png" alt="Captura 6">
+                <img src="Captura de pantalla 2026-09-29 203208.png" alt="Captura 6">
                 <p>Luis, ¡eres y serás el mejor novio del mundo! 👑🌹</p>
             </div>
         </div>
@@ -336,7 +328,6 @@ Solo entra a tu archivo **`index.html`** en GitHub, presiona el **lápiz ✏️*
     </script>
 </body>
 </html>
-
 ```
 
 Guarda los cambios con el botón verde **`Commit changes`** al final de la página.
