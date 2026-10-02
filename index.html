@@ -99,20 +99,22 @@
             border: 2px solid #ff6b8b;
         }
 
-        .music-btn {
-            background: #ff416c;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-weight: bold;
-            cursor: pointer;
-            margin-bottom: 10px;
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            margin-top: 10px;
         }
 
-        audio {
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            margin-top: 10px;
+            height: 100%;
+            border: 0;
         }
 
         /* Galería de 6 Fotos */
@@ -250,52 +252,50 @@
     </script>
 
     <div class="container">
-        <h1>¡Luis, te amo con todo mi corazón! ❤️</h1>
+        <h1>¡Luis, te amo con todo mi corazón! ❤️️</h1>
         <p class="subtitle">Eres lo mejor que me ha pasado en la vida. La distancia no cambia lo que siento por ti.</p>
 
         <div class="parasyte-badge">
-            ⚔️ Un vínculo tan fuerte e inseparable como Shin'ichi Izumi y Migi 🧠
+            ⚔️️ Un vínculo tan fuerte e inseparable como Shin'ichi Izumi y Migi 🧠
         </div>
 
-        <!-- Reproductor de Música -->
+        <!-- Reproductor de Música Garantizado -->
         <div class="music-box">
-            <p style="color: #ffb6c1; margin-bottom: 10px; font-weight: 600;">🎵 Reproduce nuestra canción especial:</p>
-            <button class="music-btn" onclick="playMusic()">▶ Activar "John Legend - All of Me"</button>
-            <audio id="bgMusic" controls loop>
-                <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-piano-112188.mp3" type="audio/mpeg">
-                Tu navegador no soporta el audio.
-            </audio>
+            <p style="color: #ffb6c1; margin-bottom: 10px; font-weight: 600;">🎵 John Legend - All of Me 🎵</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/450p7goxZqg?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
         </div>
 
-        <!-- Galería de Fotos (Los 6 archivos que subiste) -->
+        <!-- Galería de Fotos (Rutas codificadas con %20 para espacios) -->
         <div class="photo-grid">
             <div class="photo-card">
-                <img src="Captura de pantalla 2026-09-13 193412.png" alt="Foto 1">
+                <img src="Captura%20de%20pantalla%202026-09-13%20193412.png" alt="Foto 1">
                 <p>Nuestras aventuras juntos en Roblox 🎮❤️</p>
             </div>
             <div class="photo-card">
-                <img src="Captura de pantalla 2026-09-24 233349.png" alt="Foto 2">
+                <img src="Captura%20de%20pantalla%202026-09-24%20233349.png" alt="Foto 2">
                 <p>Mis momentos favoritos son a tu lado ✨</p>
             </div>
             <div class="photo-card">
-                <img src="Captura de pantalla 2026-09-26 233146.png" alt="Foto 3">
+                <img src="Captura%20de%20pantalla%202026-09-26%20233146.png" alt="Foto 3">
                 <p>Eres mi peleador favorito y mi protector 🥊💖</p>
             </div>
             <div class="photo-card">
-                <img src="Captura de pantalla 2026-09-29 202936.png" alt="Foto 4">
+                <img src="Captura%20de%20pantalla%202026-09-29%20202936.png" alt="Foto 4">
                 <p>Risas, juegos y mucho amor 💕</p>
             </div>
             <div class="photo-card">
-                <img src="Captura de pantalla 2026-09-29 203052.png" alt="Foto 5">
+                <img src="Captura%20de%20pantalla%202026-09-29%20203052.png" alt="Foto 5">
                 <p>Siempre estaré para sostenerte y abrazarte 🌸</p>
             </div>
             <div class="photo-card">
-                <img src="Captura de pantalla 2026-09-29 203208.png" alt="Foto 6">
+                <img src="Captura%20de%20pantalla%202026-09-29%20203208.png" alt="Foto 6">
                 <p>Luis, ¡eres el mejor novio del mundo! 👑🌹</p>
             </div>
         </div>
 
-        <!-- Carta Romántica con muchas expresiones de amor -->
+        <!-- Carta Romántica con expresiones de amor -->
         <div class="letter-box">
             <p><strong>Mi amado Luis,</strong></p>
             <br>
@@ -322,10 +322,6 @@
     </div>
 
     <script>
-        function playMusic() {
-            var audio = document.getElementById('bgMusic');
-            audio.play();
-        }
         function openModal() {
             document.getElementById('surpriseModal').style.display = 'flex';
         }
